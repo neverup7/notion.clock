@@ -1,0 +1,102 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>happy happy hardcore</title>
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+	
+	
+<script language="JavaScript">
+var fallObjects=new Array();function newObject(url,height,width){fallObjects[fallObjects.length]=new Array(url,height,width);}
+
+
+var numObjs=120, waft=80, fallSpeed=22, wind=0;
+newObject("smile_1.gif",29,27);
+newObject("smile_2.gif",22,20);
+newObject("smile_3.gif",15,15);
+newObject("smile_4.gif",26,25);
+newObject("smile_5.gif",23,23);
+newObject("smile_6.gif",26,25);
+newObject("smile_7.gif",32,33);
+newObject("smile_8.gif",18,18);
+newObject("smile_9.gif",31,33);
+newObject("smile_10.gif",15,15);
+newObject("smile_11.gif",30,30);
+newObject("smile_12.gif",27,31);
+newObject("smile_13.gif",22,20);
+newObject("smile_14.gif",23,23);
+newObject("smile_15.gif",26,25);
+newObject("smile_16.gif",30,48);
+newObject("smile_17.gif",28,27);
+newObject("smile_18.gif",33,33);
+
+
+
+
+function winSize(){winWidth=(moz)?window.innerWidth:document.body.clientWidth;winHeight=(moz)?window.innerHeight:document.body.clientHeight;}
+function winOfy(){winOffset=(moz)?window.pageYOffset:document.body.scrollTop;}
+function fallObject(num,vari,nu){
+	objects[num]=new Array(parseInt(Math.random()*(winWidth-waft)),-10,(parseInt(Math.random()*waft))*((Math.random()>0.5)?1:-1),0.02+Math.random()/20,0,1+parseInt(Math.random()*fallSpeed),vari,fallObjects[vari][1],fallObjects[vari][2]);
+	if(nu==1){document.write('<img id="fO'+i+'" style="position:fixed;" src="'+fallObjects[vari][0]+'">'); }
+}
+
+
+function fall(){
+	for(i=0;i<numObjs;i++){
+var fallingObject=document.getElementById('fO'+i);
+		if((objects[i][1]>(winHeight-(objects[i][5]+objects[i][7])))||(objects[i][0]>(winWidth-(objects[i][2]+objects[i][8])))){fallObject(i,objects[i][6],0);}
+		objects[i][0]+=wind;objects[i][1]+=objects[i][5];objects[i][4]+=objects[i][3];
+		with(fallingObject.style){ top=objects[i][1]+winOffset+'px';left=objects[i][0]+(objects[i][2]*Math.cos(objects[i][4]))+'px';}
+	}
+	setTimeout("fall()",31);
+}
+
+
+
+var objects = new Array(),
+winOffset=0,
+winHeight,
+winWidth,
+togvis,
+moz=(document.getElementById&&!document.all)?1:0;winSize();
+
+for (i=0;i<numObjs;i++){fallObject(i,parseInt(Math.random()*fallObjects.length),1);}
+fall();
+
+if (!Function.prototype.bind){
+    Function.prototype.bind = function (bind){
+        var self = this;
+        return function(){
+            return self.apply(bind, arguments);
+        };
+    };
+}
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3300631-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+
+ 
+
+ 
+</body>
+</html>
