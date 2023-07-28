@@ -3,7 +3,7 @@
 ![LICENSE](https://badgen.net/static/1icense/MIT/green)
 ![Static Badge](https://img.shields.io/badge/Website-notion.clock.neverup.cn-blue)
 
-[![Security Status](https://img1.imgtp.com/2023/07/28/yU4WbSGg.svg)](https://www.murphysec.com/console/report/comp/0/1617935613806804992)
+[![Security Status](https://img1.imgtp.com/2023/07/28/yU4WbSGg.svg)](https://www.murphysec.com/console/report/1684789751326728192/1684789751368671232?allow=1)
 #### 效果图:
 
 [![效果图](https://s1.ax1x.com/2023/07/28/pCxauY6.md.png)](https://imgse.com/i/pCxauY6)
