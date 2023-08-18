@@ -18,5 +18,4 @@
 **国内**: [https://notion.clock.neverup.link](https://notion.clock.neverup.cn)
 
 **国际站**: [https://neverup7.github.io/notion.clock](https://neverup7.github.io/notion.clock)
-![jSuU7d.md.png](https://s1.ax1x.com/2022/06/21/jSuU7d.md.png)
 
